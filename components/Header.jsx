@@ -32,9 +32,11 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={styles.item}>
-                    <div className={styles.menuImageBg}>
-                        <img className={styles.menuImage} src='/signInMe.png'/>
-                    </div>
+                    <Link href='/login'>
+                        <a className={styles.menuImageBg}>
+                            <img className={styles.menuImage} src='/signInMe.png'/>
+                        </a>
+                    </Link>
                 </div>
             <div className={styles.burger}>B</div>
         </div>
