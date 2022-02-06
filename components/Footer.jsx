@@ -1,8 +1,9 @@
 import Wave from 'react-wavify';
+import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
     return (
-        <div>
+        <div className={styles.footer}>
             <Wave 
                 fill='#E6B31E'
                 opacity='40%'
