@@ -14,13 +14,13 @@ const Header = () => {
                 <img className={styles.logo} src={'/logoLight.png'}/>
             </div>
             {menuItems.map(item =>
-                <Link href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>
-                    <a key={item} className={styles.item}>
-                        <div className={styles.menuItemBg}>
+                <div key={item} className={styles.item}>
+                    <Link href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>
+                        <a className={styles.menuItemBg}>
                             <h2 className={styles.menuItemText}>{item}</h2>
-                        </div>
-                    </a> 
-                </Link>)}
+                        </a>
+                    </Link>
+                </div>)}
                 <div className={styles.item}>
                     <div className={styles.menuImageBg}>
                         <img className={styles.menuImage} src='/moon.png'/>
