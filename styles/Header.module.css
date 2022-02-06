@@ -1,6 +1,5 @@
 /*Mobile first*/
 .header{
-    background-color: rgb(39, 240, 194);
     margin-left: 25%;
     margin-right: 10%;
     display: grid;
@@ -23,7 +22,6 @@
         column-gap: 1%;
     }
     .item{
-        background-color: brown;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,7 +30,6 @@
         display: none;
     }
     .menuItemBg{
-        background-color: bisque;
         width: 95%;
         display: flex;
         justify-content: center;
@@ -43,7 +40,6 @@
         font-size: 1em;
     }
     .menuImageBg{
-        background-color: bisque;
         width: 4em;
         height: 4em;
         display: flex;
