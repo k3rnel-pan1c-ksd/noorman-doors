@@ -20,6 +20,8 @@
 }
 .burger{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {     

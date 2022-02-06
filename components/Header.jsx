@@ -1,5 +1,6 @@
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
+import Hamburger from './Hamburger'
 
 const menuItems = [
     'Home',
@@ -38,7 +39,9 @@ const Header = () => {
                         </a>
                     </Link>
                 </div>
-            <div className={styles.burger}>B</div>
+            <div className={styles.burger}>
+                <Hamburger />
+            </div>
         </div>
     );
 }

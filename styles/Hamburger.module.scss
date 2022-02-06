@@ -1,6 +1,8 @@
 .burger {
   z-index: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
   outline: none;
   height: 20px;
   width: 100%;
@@ -33,10 +35,13 @@
 
 .active.burger:before {
   transform: translateY(0) rotate(45deg);
+  position: fixed;
+
 }
 
 .active.burger:after {
   transform: translateY(0) rotate(-45deg);
+  position: fixed;
 } 
 
 .sidebar{
@@ -46,10 +51,20 @@
   padding-top: 8em;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   line-height: 6em;
   background-color: #FCFAF1;
   cursor: pointer;
+}
+.sidebarLi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75em;
+}
+
+.burgerImgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
