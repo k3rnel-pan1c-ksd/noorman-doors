@@ -1,0 +1,112 @@
+/*Mobile first*/
+.header{
+    background-color: rgb(39, 240, 194);
+    margin-left: 25%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 15%;
+}
+.item {
+    display: none;
+}
+.burger{
+    display: flex;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {     
+    .header{
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 25% repeat(6, 1fr);
+        grid-template-rows: 100%;
+        column-gap: 1%;
+    }
+    .item{
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .burger{
+        display: none;
+    }
+    .menuItemBg{
+        background-color: bisque;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+    .menuItemText{
+        font-size: 1em;
+    }
+    .menuImageBg{
+        background-color: bisque;
+        width: 4em;
+        height: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .menuImage{
+        width: 70%;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .header{
+        grid-template-columns: 20% repeat(6, 1fr);
+    }
+    .menuItemBg{
+        height: 60%;
+    }
+    .menuItemText{
+        font-size: 1.5em;
+    }
+    .menuImageBg{
+        width: 5em;
+        height: 5em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header{
+        grid-template-columns: 20% repeat(6, 1fr);
+    }
+    .menuItemBg{
+        width: 100%;
+        height: 50%;
+        border-radius: 2em;
+    }
+    .menuImageBg{
+        width: 6em;
+        height: 6em;
+    }
+    .menuItemText{
+        font-size: 1.75em;
+    }
+}
+/* 4K */
+@media (min-width: 2560px) {
+    .header{
+        grid-template-columns: 15% repeat(6, 1fr);
+    }
+    .menuItemBg{
+        width: 80%;
+        height: 40%;
+        border-radius: 2em;
+    }
+    .menuItemText{
+        font-size: 2.25em;
+    }
+    .menuImageBg{
+        width: 7em;
+        height: 7em;
+    }
+}

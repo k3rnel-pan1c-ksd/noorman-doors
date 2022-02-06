@@ -1,0 +1,49 @@
+/*Mobile first*/
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    line-height: 1.15;
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 5%;
+
+  }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {     
+  .text {
+    line-height: 1.15;
+    font-size: 1.5em;
+    max-width: 100%;
+    text-align: left;
+  } 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .text {
+    line-height: 1.15;
+    font-size: 1.75em;
+    max-width: 100%;
+    text-align: left;
+  } 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .text {
+    line-height: 1.15;
+    font-size: 2em;
+    max-width: 100%;
+    text-align: left;
+  } 
+}
+/* 4K */
+@media (min-width: 2560px) {
+  .text {
+    line-height: 1.15;
+    font-size: 2.25em;
+    max-width: 100%;
+    text-align: left;
+  } 
+}

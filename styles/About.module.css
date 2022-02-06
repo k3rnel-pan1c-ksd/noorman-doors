@@ -1,0 +1,72 @@
+/*Mobile first*/
+.all {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0% 1fr 30%;
+  height: 100%;
+}
+.container {
+  padding: 2rem 30px;
+}
+.body{
+  margin-top: 5em;
+  display: flex;
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+}
+.header{
+  display: grid;
+  grid-template-columns: 1fr 20%;
+}
+
+.circle{ 
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .all {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 1fr 30%;
+    height: 100%;
+  }
+  .container {
+  }
+  .body{
+    display: flex;
+  }
+  .main {
+    padding: 4rem 4em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    user-select: none;
+  }
+  .circle{ 
+    width: 25em;
+    height: 25em;
+    
+    background: linear-gradient(180deg, rgba(230, 179, 30, 0.4) 0%, #E6B31E 100%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: 8em;
+  }
+  .dude {
+    z-index: 1;
+    height: 30em;
+  }
+}
+

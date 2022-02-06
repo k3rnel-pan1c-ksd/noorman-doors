@@ -1,0 +1,58 @@
+.bg :global{
+    --gold: #E6B31E;
+}
+
+/*Mobile first*/
+.bg {
+    width: fit-content;
+    height: fit-content;
+
+    background: linear-gradient(180deg, rgba(230, 179, 30, 0.4) 0%, var(--gold) 100%);
+    border-radius: 20px;
+
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+}
+.h2{
+    font-size: 1.25em;
+}
+
+.bg:hover{
+    background: var(--gold);
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {     
+    .h2{
+        font-size: 1.5em;
+    }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .h2{
+        font-size: 1.75em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .h2{
+        font-size: 2em;
+    }
+}
+/* 4K */
+@media (min-width: 2560px) {
+    .h2{
+        font-size: 2.25em;
+    }
+}

@@ -1,0 +1,65 @@
+/*Mobile first*/
+.circle {
+    display: none;
+}
+.dude {
+    display: none;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {     
+  .circle {
+    width: 18em;
+    height: 18em;
+    
+    background: linear-gradient(180deg, rgba(230, 179, 30, 0.4) 0%, #E6B31E 100%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  } 
+  .dude {
+    display: block;
+    height: 105%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .circle {
+    width: 25em;
+    height: 25em;
+    
+    background: linear-gradient(180deg, rgba(230, 179, 30, 0.4) 0%, #E6B31E 100%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  } 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .circle {
+    width: 30em;
+    height: 30em;
+    
+    background: linear-gradient(180deg, rgba(230, 179, 30, 0.4) 0%, #E6B31E 100%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  } 
+}
+/* 4K */
+@media (min-width: 2560px) {
+  .circle {
+    width: 55em;
+    height: 55em;
+    
+    background: linear-gradient(180deg, rgba(230, 179, 30, 0.4) 0%, #E6B31E 100%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  } 
+}
