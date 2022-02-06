@@ -7,7 +7,10 @@ const Start = () => {
     return (
         <div className={styles.all}>
             <Header />
-            <MainContainer />
+            <MainContainer
+                title={'YOU SUCK AT DESIGN.'}
+                text1={"Let's fix that"}
+                buttonTitle={"I'm ready"} />
             <Footer />
         </div>
     );

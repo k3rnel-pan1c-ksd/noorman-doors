@@ -8,9 +8,10 @@ const MainContainer = (props) => {
     return (
         <div className={styles.parent}>
             <div className={styles.left}>
-                <Title title={'Lorem ipsum dolor sit.'} />
-                <Text content={'lorre. lorre. lorre. lorre. '} />
-                <TakeToExploreButton title={'title'}/>
+                <Title title={props.title} />
+                <Text content={props.text1} />
+                {props.text2 ? <Text content={props.text2}></Text> : <></>}
+                <TakeToExploreButton title={props.buttonTitle}/>
             </div>
             <div className={styles.right}>
                 <Dude />
