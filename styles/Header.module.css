@@ -5,6 +5,15 @@
     display: grid;
     grid-template-columns: 1fr 15%;
 }
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+.logo {
+    height: 100%;
+}
 .item {
     display: none;
 }
@@ -21,7 +30,12 @@
         grid-template-rows: 100%;
         column-gap: 1%;
     }
-    .item{
+    .logoContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .item {
         display: flex;
         justify-content: center;
         align-items: center;

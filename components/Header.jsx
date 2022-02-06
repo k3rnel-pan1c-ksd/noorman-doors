@@ -10,7 +10,9 @@ const menuItems = [
 const Header = () => {
     return (
         <div className={styles.header}>
-            <div className={styles.logo}>Logo</div>
+            <div className={styles.logoContainer}>
+                <img className={styles.logo} src={'/logoLight.png'}/>
+            </div>
             {menuItems.map(item =>
                 <Link href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>
                     <a key={item} className={styles.item}>
