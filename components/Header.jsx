@@ -11,9 +11,11 @@ const menuItems = [
 const Header = () => {
     return (
         <div className={styles.header}>
-            <div className={styles.logoContainer}>
-                <img className={styles.logo} src={'/logoLight.png'}/>
-            </div>
+            <Link href={'/'}>
+                <div className={styles.logoContainer}>
+                    <img className={styles.logo} src={'/logoLight.png'}/>
+                </div>
+            </Link>
             {menuItems.map(item =>
                 <div key={item} className={styles.item}>
                     <Link href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>

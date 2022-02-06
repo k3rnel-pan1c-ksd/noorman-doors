@@ -1,0 +1,73 @@
+/*Mobile first*/
+.cards {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 10em);
+    column-gap: 2%;
+    row-gap: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card{
+    background: #FCFAF1;
+    box-shadow: 0px 0px 4px 4px rgba(230, 179, 30, 0.4);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+.card:hover {
+    box-shadow: 0px 0px 4px 4px #E6B31E;
+}
+.cardImageContainer {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 5%;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {    
+    .cards {
+        padding-top: 2%;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+        column-gap: 5%;
+        row-gap: 9%;
+    } 
+    .card {
+      font-size: 1em;
+    } 
+  }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .card {
+      font-size: 1.5em;
+    } 
+  }
+  
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .card {
+      font-size: 1.75em;
+    } 
+  }
+  /* 4K */
+  @media (min-width: 2560px) {
+    .cardImageContainer {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+      font-size: 2.25em;
+    } 
+  }
