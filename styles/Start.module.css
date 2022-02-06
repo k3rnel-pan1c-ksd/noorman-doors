@@ -3,7 +3,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr 15%;
+    grid-template-rows: 15% 1fr 30%;
     background-color: #FCFAF1;
 }
 /* Small devices (tablets, 768px and up) */
@@ -12,7 +12,7 @@
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 15% 1fr 15%
+        grid-template-rows: 15% 1fr 30%
     }
 }
 
