@@ -54,6 +54,9 @@
         align-items: center;
         border-radius: 20px;
     }
+    .menuItemBg:hover {
+        background-color: #CACACA !important;
+    }
     .menuItemText{
         font-size: 1em;
     }
@@ -65,6 +68,9 @@
         align-items: center;
         border-radius: 100%;
         cursor: pointer;
+    }
+    .menuImageBg:hover{
+        background-color: #CACACA !important;
     }
     .menuImage{
         width: 70%;

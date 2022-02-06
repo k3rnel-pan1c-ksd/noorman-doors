@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
 import Hamburger from './Hamburger'
@@ -7,8 +8,9 @@ const menuItems = [
     'About',
     'Explore'
 ]
-
 const Header = () => {
+    const router = useRouter()
+
     return (
         <div className={styles.header}>
             <Link href={'/'}>
@@ -19,7 +21,7 @@ const Header = () => {
             {menuItems.map(item =>
                 <div key={item} className={styles.item}>
                     <Link href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>
-                        <a className={styles.menuItemBg}>
+                        <a style={{backgroundColor: router.pathname.includes(item.toLowerCase()) || (router.pathname==='/' && item==='Home') ? '#E6B31E66' : 'inherit'}} className={styles.menuItemBg}>
                             <h2 className={styles.menuItemText}>{item}</h2>
                         </a>
                     </Link>
@@ -49,3 +51,5 @@ const Header = () => {
 }
 
 export default Header;
+
+//style={{backgroundColor: location.pathname.split('/').slice(1) === {item} ? '#E6B31E66' : 'inherit'}}
