@@ -3,7 +3,7 @@
     padding-top: 10%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 10em);
+    grid-template-rows: repeat(4, 20%);
     column-gap: 2%;
     row-gap: 6%;
     margin-left: 10%;
