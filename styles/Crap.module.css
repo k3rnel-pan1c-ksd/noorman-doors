@@ -1,0 +1,12 @@
+.all {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr 1fr;
+    height: 100%;
+}
+.buttonContainer{
+    margin-left: 10%;
+}
+.content {
+    margin-left: 10%;
+}
