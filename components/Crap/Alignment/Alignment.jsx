@@ -17,7 +17,10 @@ const Alignment = () => {
                 <MakeOrBreakButton title={isBroken ? 'Fix' : 'Break'} onClick={()=>setIsBroken(!isBroken)}/>
             </div>
             <Title title='Alignment.'/>
-            <Text content="Contrast is all about making distinct elements stand out and is used to drive a user’s attention to specific elements in a design."/>
+            <div style={{display: 'flex', flexDirection:'column', alignItems:'flex-start'}}>
+                <Text content="Nothing should be placed on the page arbitrarily."/>
+                <Text content="Every item should have a visual connection with something else on the page."/>
+            </div>
             {isBroken ? <BrokenAlignment /> : <FixedAlignment />}
         </div>
     );

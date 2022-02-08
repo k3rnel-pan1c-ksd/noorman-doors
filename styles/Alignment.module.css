@@ -1,14 +1,17 @@
 .main{
     margin-top: 4%;
+    padding-bottom: 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border-left-style: dotted;
+    border-color: #E6B31E;
 }
 .brokenMain{
     margin-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
+    margin-left: -12.5%;
     left: 0;
 }

@@ -4,6 +4,7 @@
     grid-template-columns: 1fr;
     grid-template-rows:1fr 1fr;
     height: 100%;
+    background-color: #FCFAF1;
 }
 .buttonContainer{
     margin-left: 10%;
