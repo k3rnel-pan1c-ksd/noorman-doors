@@ -18,8 +18,11 @@
 }
 .buttonContainer{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    column-gap: 2%;
     align-items: center;
+    position: sticky;
+    top:0
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {     
@@ -31,9 +34,12 @@
   .colorImg{
     margin-top: 0%;
   }
+
   .buttonContainer{
+    display: flex;
     justify-content: flex-start;
-  }
+    align-items: center;
+}
   .title{
       display: flex;
       justify-content: flex-start;

@@ -1,0 +1,14 @@
+.main{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.brokenMain{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+}

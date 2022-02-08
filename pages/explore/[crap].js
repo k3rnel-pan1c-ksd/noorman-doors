@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Footer from "../../components/Footer";
-import TakeToExploreButton from "../../components/TakeToExploreButton";
 import styles from '../../styles/Crap.module.css'
 import Error404 from "../404";
 import Contrast from '../../components/Crap/Contrast/Contrast'
@@ -35,9 +34,6 @@ const Explore = () => {
   
   return (crapComponent ? 
       <div className={styles.all}>
-        <div className={styles.buttonContainer}>
-          <TakeToExploreButton title='Go back'/>
-        </div>
         <div className={styles.content}>
           {crapComponent}
         </div>
