@@ -5,19 +5,9 @@
 .element {
     margin-top: 5%;
 }
-.colorImg{
-    margin-top: 4%;
-    max-width: 100%;
-    border-radius: 20px;
-}
-.sizeText{
+.right{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.buttonContainer{
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -27,15 +17,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2%;
-  }
-  .colorImg{
-    margin-top: 0%;
-  }
-  .buttonContainer{
-    justify-content: flex-start;
-  }
-  .title{
-      display: flex;
-      justify-content: flex-start;
   }
 }

@@ -7,9 +7,21 @@
     color: #E6B31E;
     padding-top: 4%;
   }
+.brokenH2{
+  text-align: left;
+  margin: 0;
+  font-size: 1.75em;
+  color: cyan;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 4%;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {     
   .h2 {
+    line-height: 1.15;
+    font-size: 2.6em;
+  }
+  .brokenH2 {
     line-height: 1.15;
     font-size: 2.6em;
   } 
@@ -20,6 +32,9 @@
   .h2 {
     font-size: 2.8em;
   } 
+  .brokenH2 {
+    font-size: 2.8em;
+  } 
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -27,10 +42,16 @@
   .h2 {
     font-size: 3em;
   } 
+  .brokenH2 {
+    font-size: 3em;
+  } 
 }
 /* 4K */
 @media (min-width: 2560px) {
   .h2 {
+    font-size: 4em;
+  } 
+  .brokenH2 {
     font-size: 4em;
   } 
 }

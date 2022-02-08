@@ -1,8 +1,11 @@
 import styles from '../styles/Heading2.module.css'
 
-const Heading2 = (props) => {
+const Heading2 = ({ isBroken, content }) => {
     return (
-        <h2 className={styles.h2}>{props.content}</h2>
+        isBroken ?
+        <h2 className={styles.brokenH2}>{content}</h2>
+        :
+        <h2 className={styles.h2}>{content}</h2>
     );
 }
 
