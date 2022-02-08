@@ -14,7 +14,7 @@ const Contrast = () => {
             <Title title='Contrast.'/>
             <Text content="Contrast is all about making distinct elements stand out and is used to drive a user’s attention to specific elements in a design."/>
             <div className={styles.buttonContainer}>
-                <MakeOrBreakButton title='Break' onClick={()=>setIsBroken(!isBroken)}/>
+                <MakeOrBreakButton title={isBroken ? 'Fix' : 'Break'} onClick={()=>setIsBroken(!isBroken)}/>
             </div>
             {isBroken ? <BrokenContrast /> : <FixedContrast />}
         </div>
