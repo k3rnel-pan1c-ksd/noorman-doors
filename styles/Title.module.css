@@ -1,9 +1,7 @@
 
 /*Mobile first*/
 .title {
-    display: flex;
     font-family: 'Montserrat-Bold';
-    justify-content: center;
     margin: 0;
     line-height: 1.15;
     font-size: 3em;
@@ -12,8 +10,6 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {     
   .title {
-    font-family: 'Montserrat-Bold';
-    line-height: 1.15;
     font-size: 3.6em;
     max-width: 100%;
     text-align: left;
@@ -23,32 +19,20 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .title {
-    font-family: 'Montserrat-Bold';
-    line-height: 1.15;
     font-size: 4.2em;
-    max-width: 100%;
-    text-align: left;
   } 
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .title {
-    font-family: 'Montserrat-Bold';
-    line-height: 1.15;
     font-size: 4.8em;
-    max-width: 100%;
-    text-align: left;
   } 
 }
 /* 4K */
 @media (min-width: 2560px) {
   .title {
-    font-family: 'Montserrat-Bold';
-    line-height: 1.15;
     font-size: 6em;
-    max-width: 100%;
-    text-align: left;
   } 
 }
 

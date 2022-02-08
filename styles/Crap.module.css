@@ -1,3 +1,4 @@
+/*Mobile first*/
 .all {
     display: grid;
     grid-template-columns: 1fr;
@@ -6,7 +7,35 @@
 }
 .buttonContainer{
     margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content {
     margin-left: 10%;
+    margin-right: 10%;
 }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {     
+    .buttonContainer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+  }
+  
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+
+  }
+  
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+
+  }
+  /* 4K */
+  @media (min-width: 2560px) {
+
+  }

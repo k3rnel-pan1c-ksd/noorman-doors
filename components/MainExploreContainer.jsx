@@ -11,8 +11,8 @@ const MainExploreContainer = () => {
     return (
         <div className={styles.cards}>
             {craps.map(crap => 
-                <Link href={`/explore/${crap.toLowerCase()}`} >
-                    <div key={crap} className={styles.card}>
+                <Link key={crap} href={`/explore/${crap.toLowerCase()}`} >
+                    <div className={styles.card}>
                         <h1>{crap}</h1>
                         <div className={styles.cardImageContainer}>
                             <img className={styles.cardImage} src={`/${crap}.png`}/>
