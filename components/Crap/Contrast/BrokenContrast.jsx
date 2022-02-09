@@ -9,15 +9,15 @@ const BrokenContrast = () => {
                 <Heading2  content='Color'/>
                 <div className={styles.colorText}>
                     <div>
-                        <Text content='Color contrast is one of the most fundamental design principles that most of us are familiar with. Even so, its application can still prove to be tricky in some cases.'/>
-                        <Text content='As a thumb-rule, high contrast is required between the text and the background colors. However, having contrasting colors for multiple elements can make a design look messy sometimes.'/>
+                        <Text isBroken={true} content='Color contrast is one of the most fundamental design principles that most of us are familiar with. Even so, its application can still prove to be tricky in some cases.'/>
+                        <Text isBroken={true} content='As a thumb-rule, high contrast is required between the text and the background colors. However, having contrasting colors for multiple elements can make a design look messy sometimes.'/>
                     </div>
                     <img className={styles.colorImg} src='/colorsBroken.png'/>
                 </div>
-                <Text content='Moreover, contrast is not just about using complementary colors but you must also ensure that participating colors in a design don’t strain users’ eyes.'/>
+                <Text isBroken={true} content='Moreover, contrast is not just about using complementary colors but you must also ensure that participating colors in a design don’t strain users’ eyes.'/>
             </div>
             <div className={styles.element}>
-                <Text content='Size'/>
+                <Heading2 content='Size'/>
                 <div className={styles.colorText}>
                     <div>
                         <Text content='Contrast can be maintained between discrete elements, especially text, using different sizes.'/>
