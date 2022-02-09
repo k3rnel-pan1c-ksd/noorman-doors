@@ -9,6 +9,10 @@
     margin-top: 4%;
     max-width: 100%;
     border-radius: 20px;
+    border-width: 1%;
+    border-left: 1%;
+    border-style: solid;
+    border-color: #E6B31E;
 }
 .sizeText{
     display: flex;
