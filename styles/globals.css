@@ -3,14 +3,15 @@ body {
   padding: 0;
   margin: auto;
   height: 100%;
+  overflow-y: visible;
 }
-
 #__next{
   height: 100%;
 }
 * {
   font-family: 'Montserrat';
   user-select: none;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;

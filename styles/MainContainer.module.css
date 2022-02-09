@@ -20,12 +20,10 @@
     .parent{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr
     }
     .left{
-        display: flex;
-        flex-direction: column;
         align-items: flex-start;
+        margin-right: 0%;
     }
     .right{
         display: flex;
