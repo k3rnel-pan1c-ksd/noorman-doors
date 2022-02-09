@@ -3,10 +3,15 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import MainContainer from '../components/MainContainer';
 import styles from '../styles/Start.module.css'
+import { useContext } from 'react';
+import { DarkModeContext } from './_app';
+import { Color } from '../constants';
 
 const About = () => {
+    const darkModeContext = useContext(DarkModeContext)
+
     return (
-        <div className={styles.all}>
+        <div style={{backgroundColor:darkModeContext.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
             <Header />
             <MainContainer
                 title={'About.'}
