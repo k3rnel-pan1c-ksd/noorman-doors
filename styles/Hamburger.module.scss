@@ -56,9 +56,10 @@
 }
 .sidebarLi{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 30%;
+  margin-bottom: 10%;
   font-size: 1.75em;
+  list-style: none;
 }
 
 .burgerImgContainer {

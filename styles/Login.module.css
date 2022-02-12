@@ -3,44 +3,23 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr 30%;
-    background-color: #FCFAF1;
+    grid-template-rows: 15% 1fr 1fr;
+    overflow: hidden;
 }
+@media (min-width: 375px) {  
+    .all{
+        grid-template-rows: 20% 1fr 1fr;
+    }
+}
+@media (min-width: 425px) {  
+    .all{
+        grid-template-rows: 25% 1fr 1fr;
+    }
+}
+
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {     
-    .all{
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 15% 1fr 30%
-    }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .all{
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 15% 1fr 25%
-    }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .all{
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 1fr 30%
-    }
-}
-/* 4K */
-@media (min-width: 2560px) {
-    .all{
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 1fr 15%
+@media (min-width: 768px) {  
+    .all{   
+        grid-template-rows: 15% 1fr 1fr;
     }
 }
