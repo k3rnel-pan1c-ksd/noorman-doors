@@ -35,5 +35,9 @@
         margin-left: 5%;
         margin-right: 5%;
     }
-
+    .images {
+        display: flex;
+        flex-direction: column;
+        max-width: 20%;
+    }
 }
