@@ -12,7 +12,7 @@ const menuItems = [
 
 const menuImages = [
     'moon.png',
-    'language.png',
+    'languageEng.png',
     'signInMe.png',
 ]
 
@@ -34,7 +34,7 @@ const Hamburger = () => {
                     )}
                     <div className={styles.burgerImgContainer}>
                         <img src={darkModeContext.isDark ? '/sun.png': '/moon.png'} onClick={()=>darkModeContext.darkModeDispatch('toggle')}/>
-                        <img src='/language.png'/>
+                        <img src='/languageEng.png'/>
                         <img src={darkModeContext.isDark ? '/signInMeDark.png': '/signInMe.png'}/>
                     </div>
                 </ul>
