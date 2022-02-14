@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import { DarkModeContext } from "../_app";
+import { ModeContext } from "../_app";
 import { useRouter } from "next/router";
 import { Color } from "../../constants";
 import Footer from "../../components/Footer";
@@ -13,7 +13,7 @@ import Proximity from '../../components/Crap/Proximity/Proximity'
 const Explore = () => {
   const router = useRouter();
   const [crapComponent, setCrapComponent] = useState(null)
-  const darkModeContext = useContext(DarkModeContext)
+  const modeContext = useContext(ModeContext)
 
   useEffect(() => {
     switch(router.query.crap){
@@ -36,7 +36,7 @@ const Explore = () => {
 
   
   return (crapComponent ? 
-      <div style={{backgroundColor:darkModeContext.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
+      <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
         <div className={styles.content}>
           {crapComponent}
         </div>

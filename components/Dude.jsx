@@ -1,12 +1,12 @@
 import styles from '../styles/Dude.module.css'
 import { useContext } from 'react';
-import { DarkModeContext } from '../pages/_app';
+import { ModeContext } from '../pages/_app';
 const Dude = () => {
-    const darkModeContext = useContext(DarkModeContext)
+    const modeContext = useContext(ModeContext)
 
     return (
         <div className={styles.circle}>
-            <img className={styles.dude} src={darkModeContext.isDark ? 'dude-dark.webp' : 'dude-light.webp'}/>
+            <img className={styles.dude} src={modeContext.darkMode.isDark ? 'dude-dark.webp' : 'dude-light.webp'}/>
         </div>
     );
 }

@@ -3,14 +3,14 @@ import Header from '../components/Header';
 import MainExploreContainer from '../components/MainExploreContainer';
 import styles from '../styles/Explore.module.css'
 import { useContext } from 'react';
-import { DarkModeContext } from './_app'
+import { ModeContext } from './_app'
 import { Color } from '../constants';
 
 const Explore = () => {
-    const darkModeContext = useContext(DarkModeContext)
+    const modeContext = useContext(ModeContext)
 
     return (
-        <div style={{backgroundColor:darkModeContext.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
+        <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
             <Header />
             <MainExploreContainer />
             <Footer />

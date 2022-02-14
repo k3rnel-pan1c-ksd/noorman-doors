@@ -3,14 +3,14 @@ import Header from './Header';
 import Footer from './Footer';
 import MainContainer from './MainContainer';
 import { useContext } from 'react';
-import { DarkModeContext } from '../pages/_app';
+import { ModeContext } from '../pages/_app';
 import { Color } from '../constants';
 import { Home } from '../localization';
 const Start = () => {
-    const darkModeContext = useContext(DarkModeContext)
+    const modeContext = useContext(ModeContext)
 
     return (
-        <div style={{backgroundColor:darkModeContext.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
+        <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
             <Header />
             <MainContainer
                 title={Home.youSuck.eng}

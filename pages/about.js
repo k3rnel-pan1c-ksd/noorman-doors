@@ -4,15 +4,15 @@ import Header from '../components/Header';
 import MainContainer from '../components/MainContainer';
 import styles from '../styles/Start.module.css'
 import { useContext } from 'react';
-import { DarkModeContext } from './_app';
+import { ModeContext } from './_app';
 import { Color } from '../constants';
 import { Abt } from '../localization';
 
 const About = () => {
-    const darkModeContext = useContext(DarkModeContext)
+    const modeContext = useContext(ModeContext)
 
     return (
-        <div style={{backgroundColor:darkModeContext.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
+        <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
             <Header />
             <MainContainer
                 title={Abt.about.eng}

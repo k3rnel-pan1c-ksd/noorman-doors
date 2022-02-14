@@ -1,10 +1,10 @@
 import styles from '../styles/Text.module.css'
 import { useContext } from 'react';
-import { DarkModeContext } from '../pages/_app';
+import { ModeContext } from '../pages/_app';
 import { Color } from '../constants';
 
 const Text = ({color, isBroken, content}) => {
-    const darkModeContext = useContext(DarkModeContext)
+    const modeContext = useContext(ModeContext)
 
     return (
         isBroken ?
@@ -12,7 +12,7 @@ const Text = ({color, isBroken, content}) => {
             {content}
         </p>
         :
-        <p style={{color: darkModeContext.isDark ? Color.whiteish : Color.dark}} className={styles.text}>
+        <p style={{color: modeContext.darkMode.isDark ? Color.whiteish : Color.dark}} className={styles.text}>
             {content}
         </p>
     );
