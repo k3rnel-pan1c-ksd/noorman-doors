@@ -15,8 +15,8 @@ const Hamburger = () => {
             <div className={`${styles.burger} ${isOpen ? styles.active : ""}`} onClick={()=>setIsOpen(!isOpen)}/>
             {isOpen && <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark:Color.whiteish}} className={styles.sidebar}>
                 <ul>
-                    {Hdr.menuItems.eng.map(item =>
-                        <Link key={item} href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>
+                    {Hdr.menuItems(modeContext.langMode.isEng).map((item,index) =>
+                        <Link key={item} href={item === Hdr.menuItems(modeContext.langMode.isEng)[0] ? '/' : `/${(Hdr.menuItems(true)[index]).toLowerCase()}`}>
                             <a className={styles.sidebarLi}>
                                 <li key={item}><Text content={item} /></li>
                             </a>
@@ -24,8 +24,10 @@ const Hamburger = () => {
                     )}
                     <div className={styles.burgerImgContainer}>
                         <img src={modeContext.darkMode.isDark ? '/sun.png': '/moon.png'} onClick={modeContext.darkMode.toggleDark}/>
-                        <img src='/languageEng.png'/>
-                        <img src={modeContext.darkMode.isDark ? '/signInMeDark.png': '/signInMe.png'}/>
+                        <img style={{maxWidth:'20%'}} src={modeContext.langMode.isEng ? '/languageCro.png' : '/languageEng.png'} onClick={modeContext.langMode.toggleLang}/>
+                        <Link href='/login'>
+                            <img src={modeContext.darkMode.isDark ? '/signInMeDark.png': '/signInMe.png'}/>
+                        </Link>
                     </div>
                 </ul>
             </div>}

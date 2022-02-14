@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Title from '../../Title'
 import Text from '../../Text'
 import MakeOrBreakButton from '../../MakeOrBreakButton'
@@ -7,17 +7,20 @@ import BrokenContrast from './BrokenContrast';
 import styles from '../../../styles/Contrast.module.css'
 import TakeToExploreButton from '../../TakeToExploreButton';
 import { Contr, Crap } from '../../../localization';
+import { ModeContext } from '../../../pages/_app';
+
 const Contrast = () => {
     const [isBroken, setIsBroken] = useState(false)
+    const modeContext = useContext(ModeContext)
 
     return (
         <div>
             <div className={styles.buttonContainer}>
-                <TakeToExploreButton title={Crap.goBack.eng}/>
-                <MakeOrBreakButton title={isBroken ? Crap.fix.eng : Crap.break.eng} onClick={()=>setIsBroken(!isBroken)}/>
+                <TakeToExploreButton title={Crap.goBack(modeContext.langMode.isEng)}/>
+                <MakeOrBreakButton title={isBroken ? Crap.fix(modeContext.langMode.isEng) : Crap.break(modeContext.langMode.isEng)} onClick={()=>setIsBroken(!isBroken)}/>
             </div>
-            <Title title={Contr.contrast.eng}/>
-            <Text content={Contr.contrastTextUpper.eng}/>
+            <Title title={Contr.contrast(modeContext.langMode.isEng)}/>
+            <Text content={Contr.contrastTextUpper(modeContext.langMode.isEng)}/>
             {isBroken ? <BrokenContrast /> : <FixedContrast />}
         </div>
     );

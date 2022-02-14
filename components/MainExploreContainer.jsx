@@ -10,12 +10,12 @@ const MainExploreContainer = () => {
 
     return (
         <div className={styles.cards}>
-            {Exp.craps.eng.map(crap => 
-                <Link key={crap} href={`/explore/${crap.toLowerCase()}`} >
+            {Exp.craps(modeContext.langMode.isEng).map((crap,index) => 
+                <Link key={crap} href={`/explore/${(Exp.craps(true)[index]).toLowerCase()}`} >
                     <div style={{backgroundColor:ModeContext ? Color.gold : Color.whiteish}} className={styles.card}>
                         <h1>{crap}</h1>
                         <div className={styles.cardImageContainer}>
-                            <img className={styles.cardImage} src={`/${crap}.png`}/>
+                            <img className={styles.cardImage} src={`/${Exp.craps(true)[index]}.png`}/>
                         </div>
                     </div>
                 </Link>)}

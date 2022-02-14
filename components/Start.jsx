@@ -13,9 +13,9 @@ const Start = () => {
         <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
             <Header />
             <MainContainer
-                title={Home.youSuck.eng}
-                text1={Home.letsFixThat.eng}
-                buttonTitle={Home.imReady.eng} />
+                title={Home.youSuck(modeContext.langMode.isEng)}
+                text1={Home.letsFixThat(modeContext.langMode.isEng)}
+                buttonTitle={Home.imReady(modeContext.langMode.isEng)} />
             <Footer />
         </div>
     );

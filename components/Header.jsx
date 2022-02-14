@@ -18,10 +18,12 @@ const Header = () => {
                     <img className={styles.logo} src={modeContext.darkMode.isDark ?'/logoDark.png' : '/logoLight.png'}/>
                 </div>
             </Link>
-            {Hdr.menuItems.eng.map(item =>
+            {Hdr.menuItems(modeContext.langMode.isEng).map((item,index) =>
                 <div key={item} className={styles.item}>
-                    <Link href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>
-                        <a style={{backgroundColor: router.pathname.includes(item.toLowerCase()) || (router.pathname==='/' && item==='Home') ? '#E6B31E66' : 'inherit'}} className={styles.menuItemBg}>
+                    <Link href={item === Hdr.menuItems(modeContext.langMode.isEng)[0] ? '/' : `/${(Hdr.menuItems(true)[index]).toLowerCase()}`}>
+                        <a style={{
+                            backgroundColor: router.pathname.includes((Hdr.menuItems(true)[index]).toLowerCase()) || (router.pathname==='/' && item===Hdr.menuItems(modeContext.langMode.isEng)[0]) ? '#E6B31E66' : 'inherit'}} 
+                            className={styles.menuItemBg}>
                             <h2 style={{color: modeContext.darkMode.isDark ? Color.whiteish : Color.dark}} className={styles.menuItemText}>{item}</h2>
                         </a>
                     </Link>

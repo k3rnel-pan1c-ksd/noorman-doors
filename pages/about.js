@@ -15,10 +15,10 @@ const About = () => {
         <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark : Color.whiteish}} className={styles.all}>
             <Header />
             <MainContainer
-                title={Abt.about.eng}
-                text1={Abt.weMakeItARule.eng}
-                text2={Abt.thisWebpageContains.eng}
-                buttonTitle={Abt.exploreHow.eng} />
+                title={Abt.about(modeContext.langMode.isEng)}
+                text1={Abt.weMakeItARule(modeContext.langMode.isEng)}
+                text2={Abt.thisWebpageContains(modeContext.langMode.isEng)}
+                buttonTitle={Abt.exploreHow(modeContext.langMode.isEng)} />
             <Footer />
         </div>
     );
