@@ -5,12 +5,7 @@ import styles from '../styles/Header.module.css'
 import Link from 'next/link'
 import Hamburger from './Hamburger'
 import { Color } from '../constants'
-
-const menuItems = [
-    'Home',
-    'About',
-    'Explore'
-]
+import { Hdr } from '../localization'
 const Header = () => {
     const router = useRouter()
     const darkModeContext = useContext(DarkModeContext)
@@ -22,7 +17,7 @@ const Header = () => {
                     <img className={styles.logo} src={darkModeContext.isDark ?'/logoDark.png' : '/logoLight.png'}/>
                 </div>
             </Link>
-            {menuItems.map(item =>
+            {Hdr.menuItems.eng.map(item =>
                 <div key={item} className={styles.item}>
                     <Link href={item === 'Home' ?'/' : `/${item.toLowerCase()}`}>
                         <a style={{backgroundColor: router.pathname.includes(item.toLowerCase()) || (router.pathname==='/' && item==='Home') ? '#E6B31E66' : 'inherit'}} className={styles.menuItemBg}>

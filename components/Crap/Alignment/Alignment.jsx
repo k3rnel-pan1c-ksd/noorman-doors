@@ -6,6 +6,7 @@ import FixedAlignment from './FixedAlignment';
 import BrokenAlignment from './BrokenAlignment';
 import styles from '../../../styles/Contrast.module.css'
 import TakeToExploreButton from '../../TakeToExploreButton';
+import { Crap, Align } from '../../../localization';
 
 const Alignment = () => {
     const [isBroken, setIsBroken] = useState(false)
@@ -13,13 +14,13 @@ const Alignment = () => {
     return (
         <div>
             <div className={styles.buttonContainer}>
-                <TakeToExploreButton title='Go back'/>
-                <MakeOrBreakButton title={isBroken ? 'Fix' : 'Break'} onClick={()=>setIsBroken(!isBroken)}/>
+                <TakeToExploreButton title={Crap.goBack.eng}/>
+                <MakeOrBreakButton title={isBroken ? Crap.fix.eng : Crap.break.eng} onClick={()=>setIsBroken(!isBroken)}/>
             </div>
-            <Title title='Alignment.'/>
+            <Title title={Align.alignment.eng}/>
             <div style={{display: 'flex', flexDirection:'column', alignItems:'flex-start'}}>
-                <Text content="Nothing should be placed on the page arbitrarily."/>
-                <Text content="Every item should have a visual connection with something else on the page."/>
+                <Text content={Align.alignmentTextUpper1.eng}/>
+                <Text content={Align.alignmentTextUpper2.eng}/>
             </div>
             {isBroken ? <BrokenAlignment /> : <FixedAlignment />}
         </div>

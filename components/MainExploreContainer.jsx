@@ -3,19 +3,14 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { DarkModeContext } from '../pages/_app'
 import { Color } from '../constants'
+import { Exp } from '../localization'
 
-const craps = [
-    'Contrast',
-    'Repetition',
-    'Alignment',
-    'Proximity'
-]
 const MainExploreContainer = () => {
     const darkModeContext = useContext(DarkModeContext)
 
     return (
         <div className={styles.cards}>
-            {craps.map(crap => 
+            {Exp.craps.eng.map(crap => 
                 <Link key={crap} href={`/explore/${crap.toLowerCase()}`} >
                     <div style={{backgroundColor:darkModeContext.isDark ? Color.gold : Color.whiteish}} className={styles.card}>
                         <h1>{crap}</h1>

@@ -6,6 +6,7 @@ import FixedRepetition from './FixedRepetition';
 import BrokenRepetition from './BrokenRepetition';
 import styles from '../../../styles/Contrast.module.css'
 import TakeToExploreButton from '../../TakeToExploreButton';
+import { Repet, Crap } from '../../../localization';
 
 const Repetition = () => {
     const [isBroken, setIsBroken] = useState(false)
@@ -13,11 +14,11 @@ const Repetition = () => {
     return (
         <div>
             <div className={styles.buttonContainer}>
-                <TakeToExploreButton title='Go back'/>
-                <MakeOrBreakButton title={isBroken ? 'Fix' : 'Break'} onClick={()=>setIsBroken(!isBroken)}/>
+                <TakeToExploreButton title={Crap.goBack.eng}/>
+                <MakeOrBreakButton title={isBroken ? Crap.fix.eng : Crap.break.eng} onClick={()=>setIsBroken(!isBroken)}/>
             </div>
-            <Title title='Repetition.'/>
-            <Text content="Repetition is how you maintain consistency in a design. It helps users get familiarized with the way information is presented to them."/>
+            <Title title={Repet.repetition.eng}/>
+            <Text content={Repet.repetitionTextUpper.eng}/>
             {isBroken ? <BrokenRepetition /> : <FixedRepetition />}
         </div>
     );
