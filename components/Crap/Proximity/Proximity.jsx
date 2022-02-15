@@ -19,11 +19,11 @@ const Proximity = () => {
                 <MakeOrBreakButton title={isBroken ? Crap.fix(modeContext.langMode.isEng) : Crap.break(modeContext.langMode.isEng)} onClick={()=>setIsBroken(!isBroken)}/>
             </div>
             <Title title={Prox.proximity(modeContext.langMode.isEng)}/>
-            <div style={{display: 'flex', flexDirection:'column', alignItems:'flex-start'}}>
-                <ul>
-                    <li><Text content={Prox.alignmentTextUpper1(modeContext.langMode.isEng)}/></li>
-                    <li><Text content={Prox.alignmentTextUpper2(modeContext.langMode.isEng)}/></li>
-                </ul>
+            <div>
+                <div style={{display:'flex',flexDirection:'column', alignItems:'flex-start'}}>
+                    <Text content={Prox.alignmentTextUpper1(modeContext.langMode.isEng)}/>
+                    <Text content={Prox.alignmentTextUpper2(modeContext.langMode.isEng)}/>
+                </div>
 
             </div>
             {isBroken ? 
