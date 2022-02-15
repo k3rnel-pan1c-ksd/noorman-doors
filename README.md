@@ -1,34 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Norman doors
 
-## Getting Started
+## ✍🏼 Low fidelity
 
-First, run the development server:
+Excalidraw
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Screenshot 2022-02-15 at 20.33.44.png](./ImagesForReadme/Screenshot_2022-02-15_at_20.33.44.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Components hierarchy (e.g. for Home page, path: / )
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![Screenshot 2022-02-15 at 20.43.26.png](./ImagesForReadme/Screenshot_2022-02-15_at_20.43.26.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🎨 High fidelity
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Design system+color palette
 
-## Learn More
+![Screenshot 2022-02-15 at 20.03.21.png](./ImagesForReadme/Screenshot_2022-02-15_at_20.03.21.png)
 
-To learn more about Next.js, take a look at the following resources:
+![colorPalette.png](./ImagesForReadme/colorPalette.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Figma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Screenshot 2022-02-15 at 20.08.12.png](./ImagesForReadme/Screenshot_2022-02-15_at_20.08.12.png)
 
-## Deploy on Vercel
+## 🖥️ Implementation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Try it out: [https://noorman-doors.vercel.app/](https://noorman-doors.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ✅ Evaluation
+
+In the process of making this app I made sure to follow basic UX/UI principles in both the app and the code that I’ve learned in class Human Computer Interaction such as
+
+### 🪴 Norman’s design principles
+
+1. Visibility
+2. Feedback
+3. Constraints
+4. Mapping
+5. Consistency
+6. Affordance
+7. Mental models
+
+### 👁️ Usability heuristics
+
+1. Match between system and the real world
+2. Consistency and standards
+3. Visibility of system status
+4. User control and freedom
+5. Error prevention
+6. Help user’s recognize, diagnose and recover from errors
+7. Recognition rather than recall
+8. Flexibility and efficiency of use
+9. Aesthetic and minimalist design
+10. Help and documentation
+
+### 💩 CRAP principles ( also a topic of this app)
+
+1. Contrast
+2. Repetition
+3. Alignment
+4. Proximity
+
+## 🏃🏻‍♂️ Going the extra mile
+
+### Custom CSS  - no framework whatsoever
+
+![css2.png](./ImagesForReadme/css2.png)
+
+![css4.png](./ImagesForReadme/css4.png)
+
+### _document.js file for SEO
+
+![Screenshot 2022-02-15 at 22.27.30.png](./ImagesForReadme/Screenshot_2022-02-15_at_22.27.30.png)
+
+![Screenshot 2022-02-15 at 22.55.09.png](./ImagesForReadme/Screenshot_2022-02-15_at_22.55.09.png)
+
+### Color blindness covered
+
+![Screenshot 2022-02-15 at 20.20.16.png](./ImagesForReadme/Screenshot_2022-02-15_at_20.20.16.png)
+
+### Support dark mode
+
+Visible on high fidelity images in this README
+
+### Support multiple languages -> eng+cro
+
+![Screenshot 2022-02-15 at 21.07.17.png](./ImagesForReadme/Screenshot_2022-02-15_at_21.07.17.png)
+
+![Screenshot 2022-02-15 at 21.07.28.png](./ImagesForReadme/Screenshot_2022-02-15_at_21.07.28.png)
+
+### 404 page - custom
+
+With dark mode and language mode in mind and with a safety net button (not on image) in place 
+
+![light404.png](./ImagesForReadme/light404.png)
+
+### **Measured page quality**
+
+![Screenshot 2022-02-16 at 00.38.42.png](./ImagesForReadme/Screenshot_2022-02-16_at_00.38.42.png)
