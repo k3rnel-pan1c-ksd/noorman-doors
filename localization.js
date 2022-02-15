@@ -221,6 +221,6 @@ export class Prox {
 }
 export class four04 {
     static backToSafety(isEng) {
-        return(isEng ? 'Back to safety' : 'Nazad u sigurnost')
+        return(isEng ? 'Back to safety' : 'Natrag u sigurnost')
     }
 }
