@@ -219,3 +219,8 @@ export class Prox {
          : 'Osnovna svrha blizine je organiziranje sadržaja')
     }
 }
+export class four04 {
+    static backToSafety(isEng) {
+        return(isEng ? 'Back to safety' : 'Nazad u sigurnost')
+    }
+}
