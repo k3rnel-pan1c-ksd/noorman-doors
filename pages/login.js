@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { ModeContext } from "./_app";
 import { Color } from "../constants";
 
-const login = () => {
+const Login = () => {
     const modeContext = useContext(ModeContext)
 
     return (
@@ -18,4 +18,4 @@ const login = () => {
     );
 }
 
-export default login;
+export default Login;
