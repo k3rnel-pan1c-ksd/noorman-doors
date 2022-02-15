@@ -2,8 +2,11 @@ import '../styles/globals.css'
 import { createContext, useReducer, useEffect, useState } from 'react'
 import Head from 'next/head'
 import useDarkMode from 'use-dark-mode'
+import { useRouter } from 'next/router'
+import { C } from '../constants'
 
 export const ModeContext = createContext()
+
 const combineReducers = (slices) => (prevState, action) =>
   Object.keys(slices).reduce(
     (nextState, nextProp) => ({
@@ -44,13 +47,14 @@ function MyApp({ Component, pageProps }) {
     }
   };
 
+  const router = useRouter()
+
   return (
     <ModeContext.Provider value={contextValue}>
       {isMounted && 
       <>
           <Head>
-            <title>Norman Doors</title>
-            <meta name="description" content="Design" />
+            <title>{C.getTitle(router.pathname, state.lMode)}</title>
             <link rel="icon" href={state.dMode ? "/logoDark.png" : "/logoLight.png"} />
           </Head>
           <Component {...pageProps} />
