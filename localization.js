@@ -106,7 +106,7 @@ export class Contr {
     }
     static sizeTitle(isEng) {
             return (isEng ? 'Size.' 
-             : 'veličina.')
+             : 'Veličina.')
         } 
     static sizeText1(isEng) {
             return (isEng ? "Contrast can be maintained between discrete elements  especially text  using different sizes." 
