@@ -8,7 +8,7 @@ const Error404 = () =>{
     const modeContext = useContext(ModeContext)
 
     return (
-        <div style={{height: '130%',marginBottom:'200px', overflow:'hidden', backgroundColor: modeContext.darkMode.isDark ? Color.dark : Color.whiteish ,display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
+        <div style={{height: '150%',marginBottom:'200px', overflow:'hidden', backgroundColor: modeContext.darkMode.isDark ? Color.dark : Color.whiteish ,display:'flex', flexDirection:'column', justifyContent:'flex-start', alignItems:'center'}}>
             <img style={{maxHeight:'40em'}} src={modeContext.darkMode.isDark ? '/dark404.png': '/light404.png'}/>
             <Link href='/'><DemoButton title={four04.backToSafety(modeContext.langMode.isEng)}/></Link>
         </div>
