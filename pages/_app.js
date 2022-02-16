@@ -16,17 +16,16 @@ const combineReducers = (slices) => (prevState, action) =>
     prevState
   );
 
-const dMode = (state, action) =>
-  action.type === "TOGGLE_DARK" ? !state : state;
-const lMode = (state, action) =>
-  action.type === "TOGGLE_LANG" ? !state : state;
+
 
 function MyApp({ Component, pageProps }) {
-  const [isMounted, setIsMounted] = useState(false)
-  const customDarkMode = useDarkMode(false)
+  const darkMode = useDarkMode(false);
 
-  const [state, dispatch] = useReducer(combineReducers({ dMode, lMode }), {
-    dMode: customDarkMode,
+  const lMode = (state, action) =>
+    action.type === "TOGGLE_LANG" ? !state : state;
+  const [isMounted, setIsMounted] = useState(false)
+
+  const [state, dispatch] = useReducer(combineReducers({ lMode }), {
     lMode: false
   });
 
@@ -34,12 +33,12 @@ function MyApp({ Component, pageProps }) {
     setIsMounted(true)
   }, []);
 
-  const toggleDark = () => dispatch({ type: "TOGGLE_DARK" });
   const toggleLang = () => dispatch({ type: "TOGGLE_LANG" });
+
   const contextValue = {
     darkMode: {
-      isDark: state.dMode,
-      toggleDark: toggleDark
+      isDark: darkMode.value,
+      toggleDark: darkMode.toggle
     },
     langMode: {
       isEng: state.lMode,
@@ -55,7 +54,7 @@ function MyApp({ Component, pageProps }) {
       <>
           <Head>
             <title>{C.getTitle(router.pathname, state.lMode)}</title>
-            <link rel="icon" href={state.dMode ? "/logoDark.png" : "/logoLight.png"} />
+            <link rel="icon" href={darkMode.value ? "/logoDark.png" : "/logoLight.png"} />
           </Head>
           <Component {...pageProps} />
       </>}

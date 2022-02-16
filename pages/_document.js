@@ -8,9 +8,10 @@ export default class CutomDocument extends Document {
                 <meta name="description" content="Web application created to help designers improve their abilities and non-designers to think like a true artist" />
                 </Head>
                 <body>
+                    <script src="noflash.js" />
                     <Main />
+                    <NextScript/>
                 </body>
-                <NextScript/>
             </Html>
         )
     }
