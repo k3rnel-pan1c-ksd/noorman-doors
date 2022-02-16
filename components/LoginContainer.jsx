@@ -19,7 +19,7 @@ function LoginContainer() {
                     <Textfield id='password' setIsEmpty={setIsPassEmpty}/>
                     { !(isEmailEmpty || isPassEmpty) ?
                     <div className={styles.submit}>
-                        <DemoButton title={Log.login(modeContext.langMode.isEng)} onClick={()=>alert(Log.loginAlert)}/>
+                        <DemoButton title={Log.login(modeContext.langMode.isEng)} onClick={()=>alert(Log.loginAlert(modeContext.langMode.isEng))}/>
                     </div> : <></>}
                 </form>
             </div>
