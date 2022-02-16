@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Text from '../components/Text'
 import { Hdr } from '../localization';
 
-const Hamburger = () => {
+const Hamburger = ({route}) => {
     const [isOpen, setIsOpen] = useState(false)
     const modeContext = useContext(ModeContext)
 
@@ -17,8 +17,8 @@ const Hamburger = () => {
                 <ul>
                     {Hdr.menuItems(modeContext.langMode.isEng).map((item,index) =>
                         <Link key={item} href={item === Hdr.menuItems(modeContext.langMode.isEng)[0] ? '/' : `/${(Hdr.menuItems(true)[index]).toLowerCase()}`}>
-                            <a className={styles.sidebarLi}>
-                                <li key={item}><Text content={item} /></li>
+                            <a style={{width:'auto', borderRadius:'20px', backgroundColor: route.includes((Hdr.menuItems(true)[index]).toLowerCase()) || (route==='/' && item===Hdr.menuItems(modeContext.langMode.isEng)[0]) ? '#E6B31E66' : '#E6B31E33'}} className={styles.sidebarLi}>
+                                <li style={{padding:'4%'}} key={item}><Text content={item} /></li>
                             </a>
                         </Link>
                     )}

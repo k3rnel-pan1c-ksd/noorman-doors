@@ -46,7 +46,7 @@ const Header = () => {
                     </Link>
                 </div>
             <div className={styles.burger}>
-                <Hamburger />
+                <Hamburger route={router.pathname}/>
             </div>
         </div>
     );
