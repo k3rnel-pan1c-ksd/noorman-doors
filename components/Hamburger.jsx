@@ -16,8 +16,8 @@ const Hamburger = ({route}) => {
             {isOpen && <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark:Color.whiteish}} className={styles.sidebar}>
                 <ul>
                     {Hdr.menuItems(modeContext.langMode.isEng).map((item,index) =>
-                        <Link key={item} href={item === Hdr.menuItems(modeContext.langMode.isEng)[0] ? '/' : `/${(Hdr.menuItems(true)[index]).toLowerCase()}`}>
-                            <a style={{width:'auto', borderRadius:'20px', backgroundColor: route.includes((Hdr.menuItems(true)[index]).toLowerCase()) || (route==='/' && item===Hdr.menuItems(modeContext.langMode.isEng)[0]) ? '#E6B31E66' : '#E6B31E33'}} className={styles.sidebarLi}>
+                        <Link style={{margin:'auto', padding:0}} key={item} href={item === Hdr.menuItems(modeContext.langMode.isEng)[0] ? '/' : `/${(Hdr.menuItems(true)[index]).toLowerCase()}`}>
+                            <a style={{margin:'0 10% 5% 10%', display:'flex', justifyContent:'center', borderRadius:'20px', backgroundColor: route.includes((Hdr.menuItems(true)[index]).toLowerCase()) || (route==='/' && item===Hdr.menuItems(modeContext.langMode.isEng)[0]) ? '#E6B31E66' : '#E6B31E33'}} className={styles.sidebarLi}>
                                 <li style={{padding:'4%'}} key={item}><Text content={item} /></li>
                             </a>
                         </Link>
