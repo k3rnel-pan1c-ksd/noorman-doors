@@ -14,7 +14,7 @@ const Hamburger = ({route}) => {
         <>
             <div className={`${styles.burger} ${isOpen ? styles.active : ""}`} onClick={()=>setIsOpen(!isOpen)}/>
             {isOpen && <div style={{backgroundColor:modeContext.darkMode.isDark ? Color.dark:Color.whiteish}} className={styles.sidebar}>
-                <ul>
+                <div>
                     {Hdr.menuItems(modeContext.langMode.isEng).map((item,index) =>
                         <Link style={{margin:'auto', padding:0}} key={item} href={item === Hdr.menuItems(modeContext.langMode.isEng)[0] ? '/' : `/${(Hdr.menuItems(true)[index]).toLowerCase()}`}>
                             <a style={{margin:'0 10% 5% 10%', display:'flex', justifyContent:'center', borderRadius:'20px', backgroundColor: route.includes((Hdr.menuItems(true)[index]).toLowerCase()) || (route==='/' && item===Hdr.menuItems(modeContext.langMode.isEng)[0]) ? '#E6B31E66' : '#E6B31E33'}} className={styles.sidebarLi}>
@@ -29,7 +29,7 @@ const Hamburger = ({route}) => {
                             <img src={modeContext.darkMode.isDark ? '/signInMeDark.png': '/signInMe.png'}/>
                         </Link>
                     </div>
-                </ul>
+                </div>
             </div>}
         </>
     );
